@@ -1,0 +1,907 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html
+{
+  scroll-behavior: smooth;
+}
+
+body
+{
+  background: #d60f0f;
+  height: 100vh;
+}
+
+header
+{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  background: #d60f0f;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.11), 
+  0 2px 2px rgba(0,0,0,0.11), 
+  0 4px 4px rgba(0,0,0,0.11), 
+  0 6px 8px rgba(0,0,0,0.11),
+  0 8px 16px rgba(0,0,0,0.11);
+}
+
+.logo a
+{
+  font-size: 40px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+  text-decoration: none;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.11), 
+  0 2px 2px rgba(0,0,0,0.11), 
+  0 4px 4px rgba(0,0,0,0.11), 
+  0 6px 8px rgba(0,0,0,0.11),
+  0 8px 16px rgba(0,0,0,0.11);
+}
+
+.logo a sup {
+  font-size: 15px;
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+
+
+nav ul
+{
+  display: flex;
+  height: 70px;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul li
+{
+  list-style: none;
+}
+
+nav ul li a
+{
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  padding-right: 50px;
+  text-transform: uppercase;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.11), 
+  0 2px 2px rgba(0,0,0,0.11), 
+  0 4px 4px rgba(0,0,0,0.11), 
+  0 6px 8px rgba(0,0,0,0.11),
+  0 8px 16px rgba(0,0,0,0.11);
+}
+
+section
+{
+  height: 100vh;
+}
+
+.home h1
+{
+  font-size: 100px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  padding-top: 15vh;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.11), 
+  0 2px 2px rgba(0,0,0,0.11), 
+  0 4px 4px rgba(0,0,0,0.11), 
+  0 6px 8px rgba(0,0,0,0.11),
+  0 8px 16px rgba(0,0,0,0.11);
+}
+
+.home h1 sup {
+  font-size: 40px;
+  padding-top: 25px;
+}
+
+.home p
+{
+  font-size: 40px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.11), 
+  0 2px 2px rgba(0,0,0,0.11), 
+  0 4px 4px rgba(0,0,0,0.11), 
+  0 6px 8px rgba(0,0,0,0.11),
+  0 8px 16px rgba(0,0,0,0.11);
+}
+
+.phone1
+{
+  width: 280px;
+  height: 550px;
+  background: #000;  
+  position: relative;
+  top: 60%;
+  left: 50%;
+  transform: translate(-70%, -50%);
+  border-radius: 30px;
+  box-shadow: -5px 7px 7px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  transform: rotate(-25deg);
+  transform-origin: -300% 100%;
+}
+
+.phone2
+{
+  width: 280px;
+  height: 550px;
+  background: #000;  
+  position: relative;
+  top: 0%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+  border-radius: 30px;
+  box-shadow: -5px 7px 7px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  transform: rotate(-25deg);
+  transform-origin: -430% 200%;
+}
+
+.phone3 {
+  width: 280px;
+  height: 550px;
+  background: #000;  
+  position: relative;
+  top: 0%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+  border-radius: 30px;
+  box-shadow: -5px 7px 7px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  transform: rotate(-25deg);
+  transform-origin: -820% 405%;
+}
+
+.phone1 .layer1,
+.phone2 .layer1,
+.phone3 .layer1
+{
+  width: 280px;
+  height: 550px;
+  border: 7px solid yellow;
+  border-radius: 30px;
+  box-shadow: 0 5px 1px rgba(0,0,0,0.09), 
+  0 4px 2px rgba(0,0,0,0.09), 
+  0 8px 4px rgba(0,0,0,0.09), 
+  0 16px 8px rgba(0,0,0,0.09),
+  0 32px 16px rgba(0,0,0,0.09);
+}
+
+.phone1 .layer2,
+.phone2 .layer2,
+.phone3 .layer2
+{
+  position: absolute;
+  top: 3px;
+  left: 5px;
+  width: 270px;
+  height: 545px;
+  border: 7px solid yellow;
+  border-radius: 30px;
+}
+
+.layer2::before{
+  content: '';
+  width: 150px;
+  height: 30px;
+  position: relative;
+  top: -9px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  background: yellow;
+  border-radius: 13px;
+  box-shadow: 0px 0.5px 0.6px rgba(0, 0, 0, 0.1);
+}
+
+.layer2 .line1 {
+  width: 50px;
+  height: 5px;
+  position: absolute;
+  top: 5px;
+  left: 100px;
+  border-radius: 5px;
+  box-shadow: inset -2px -1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.layer2 .line1::after {
+  content: '';
+  width: 7px;
+  height: 7px;
+  display: inline;
+  position: absolute;
+  top: -1px;
+  left: 60px;
+  border-radius: 50%;
+  box-shadow: inset -2px -1px 1px rgba(0, 0, 0, 0.5);
+}
+
+
+.phone1 .button,
+.phone2 .button,
+.phone3 .button
+{
+  width: 25px;
+  height: 3px;
+  background: yellow;
+  position: absolute;
+  left: -5%;
+  top: 15%;
+  border-radius: 7px;
+  transform: rotate(90deg);
+}
+
+.phone1 .volume-button-plus,
+.phone2 .volume-button-plus,
+.phone3 .volume-button-plus
+{
+  width: 40px;
+  height: 3px;
+  background: yellow;
+  position: absolute;
+  left: -7.5%;
+  top: 27%;
+  border-radius: 7px;
+  transform: rotate(90deg);
+}
+
+.phone1 .volume-button-minus,
+.phone2 .volume-button-minus,
+.phone3 .volume-button-minus
+{
+  width: 40px;
+  height: 3px;
+  background: yellow;
+  position: absolute;
+  left: -7.5%;
+  top: 37%;
+  border-radius: 7px;
+  transform: rotate(90deg);
+}
+
+.phone1 .power-button,
+.phone2 .power-button,
+.phone3 .power-button
+{
+  width: 70px;
+  height: 3px;
+  background: yellow;
+  position: absolute;
+  right: -13%;
+  top: 30%;
+  border-radius: 7px;
+  transform: rotate(90deg);
+}
+
+.menu-back
+{
+  width: 230px;
+  height: 50px;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.menu-back ul {
+  display: flex;
+  height: 50px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5px;
+}
+
+.menu-back ul li {
+  list-style: none;
+}
+
+ul li i {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.phone1 .imgBx
+{
+  width: 210px;
+  height: 210px;
+  position: absolute;
+  top: 41%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.phone1 .imgBx img
+{
+  height: 100%;
+  width: 100%;
+}
+
+.details h3 {
+  position: absolute;
+  top: 64%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 15px;
+  font-weight: 300;
+  color: #fff;
+}
+
+.details h4 {
+  position: absolute;
+  top: 68%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 10px;
+  font-weight: 200;
+  color: #fff;
+}
+
+.phone1 .layer2 .line {
+  width: 85%;
+  height: 3px;
+  background: #fff;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.phone1 .layer2 .controls
+{
+  width: 230px;
+  height: 50px;
+  position: absolute;
+  top: 83%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.controls ul {
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+  
+.controls ul li {
+  list-style: none;
+  padding: 0 13px;
+}
+  
+.controls li i {
+  color: #fff;
+  font-size: 20px;
+
+}
+
+.controls li .fa-pause-circle {
+  font-size: 35px;
+  font-weight: 100;
+}
+
+.controls li .fa-step-backward,
+.menu-back .fa-ellipsis-v,
+.controls li .fa-step-forward,
+.menu-back .fa-arrow-left
+{
+  font-weight: 500;
+}
+
+.controls li .fa-random,
+.controls li .fa-repeat {
+  opacity: .5;
+  font-weight: 100;
+}
+
+.options {
+  width: 230px;
+  height: 45px;
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.options ul {
+  display: flex;
+  height: 50px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.options ul li {
+  list-style: none;
+}
+
+.options ul li img {
+  filter: grayscale(1) invert(1);
+  width: 20px;
+  height: 20px;
+}
+
+.phone2 h3 {
+  color: #fff;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-shadow: 0 1px 1px rgba(0,0,0,0.11), 
+  0 2px 2px rgba(0,0,0,0.11), 
+  0 4px 4px rgba(0,0,0,0.11), 
+  0 6px 8px rgba(0,0,0,0.11),
+  0 8px 16px rgba(0,0,0,0.11);
+}
+
+.phone2 .shuffle {
+  color: #fff;
+  background: #d60f0f;
+  font-size: 12px;
+  text-transform: uppercase;
+  position: absolute;
+  top: 26%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 25px;
+  border-radius: 20px;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.11), 
+  0 2px 2px rgba(0,0,0,0.11), 
+  0 4px 4px rgba(0,0,0,0.11), 
+  0 6px 8px rgba(0,0,0,0.11),
+  0 8px 16px rgba(0,0,0,0.11);
+}
+
+.phone2 .song-container {
+  width: 230px;
+  height: 250px;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.phone2 .liked-songs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.liked-songs .imgBx {
+  height: 40px;
+  width: 40px;
+}
+
+.liked-songs .imgBx img {
+  width: 100%;
+  height: 100%;
+}
+
+.liked-songs .songdetail {
+  width: 150px;
+  height: 40px;
+}
+
+.liked-songs .songdetail h5 {
+  color: #fff;
+  font-size: 11px;
+  font-weight: 500;
+  padding-left: 10px;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.11), 
+  0 2px 2px rgba(0,0,0,0.11), 
+  0 4px 4px rgba(0,0,0,0.11), 
+  0 6px 8px rgba(0,0,0,0.11),
+  0 8px 16px rgba(0,0,0,0.11);
+}
+
+.liked-songs .songdetail p {
+  color: darkgrey;
+  font-size: 9px;
+  font-weight: 400;
+  position: absolute;
+  padding-left: 10px;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.11), 
+  0 2px 2px rgba(0,0,0,0.11), 
+  0 4px 4px rgba(0,0,0,0.11), 
+  0 6px 8px rgba(0,0,0,0.11),
+  0 8px 16px rgba(0,0,0,0.11);
+}
+
+.liked-songs .fa-heart {
+  color: #d60f0f;
+  font-size: 15px;
+  padding-right: 10px;
+}
+
+.liked-songs .fa-ellipsis-v {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.song-play {
+  width: 250px;
+  height: 50px;
+  position: absolute;
+  top: 81%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #5c5d64;
+  border-bottom: 1px solid #0f0f0f;
+}
+
+.song-play .imgBx{
+  width: 50px;
+  height: 50px;
+}
+
+.song-play .imgBx img {
+  width: 100%;
+  height: 100%;
+}
+
+.song-play .songdetail h5{
+  color: #fff;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.11), 
+  0 2px 2px rgba(0,0,0,0.11), 
+  0 4px 4px rgba(0,0,0,0.11), 
+  0 6px 8px rgba(0,0,0,0.11),
+  0 8px 16px rgba(0,0,0,0.11);
+}
+
+.song-play .songdetail p {
+  color: darkgrey;
+  font-size: 10px;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.11), 
+  0 2px 2px rgba(0,0,0,0.11), 
+  0 4px 4px rgba(0,0,0,0.11), 
+  0 6px 8px rgba(0,0,0,0.11),
+  0 8px 16px rgba(0,0,0,0.11);
+}
+
+.song-play .fa-heart {
+  color: #d60f0f;
+}
+
+.song-play .fa-play {
+  color: #fff;
+}
+
+.phone3 h4 {
+  color: #fff;
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 600;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.11), 
+  0 2px 2px rgba(0,0,0,0.11), 
+  0 4px 4px rgba(0,0,0,0.11), 
+  0 6px 8px rgba(0,0,0,0.11),
+  0 8px 16px rgba(0,0,0,0.11);
+}
+
+.phone3 p {
+  font-size: 8px;
+  font-weight: 300;
+  color: #fff;
+  position: absolute;
+  top: -25%;
+  left: 25%;
+  transform: translateX(-15%);
+  text-shadow: 0 1px 1px rgba(0,0,0,0.11), 
+  0 2px 2px rgba(0,0,0,0.11), 
+  0 4px 4px rgba(0,0,0,0.11), 
+  0 6px 8px rgba(0,0,0,0.11),
+  0 8px 16px rgba(0,0,0,0.11);
+}
+
+.phone3 .container {
+  position: absolute;
+  top: 30%;
+  display: flex;
+}
+
+.phone3 .container .imgBx {
+  width: 110px;
+  height: 110px;
+  margin: 0 10px;
+}
+
+.container .imgBx img {
+  width: 100%;
+  height: 100%;
+}
+
+.container2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 280px;
+  height: 200px;
+}
+
+.container2 h4 {
+  color: #fff;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-weight: 600;
+  width: 150px;
+  height: 40px;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.11), 
+  0 2px 2px rgba(0,0,0,0.11), 
+  0 4px 4px rgba(0,0,0,0.11), 
+  0 6px 8px rgba(0,0,0,0.11),
+  0 8px 16px rgba(0,0,0,0.11);
+}
+
+
+.container2 .recent .imgBx {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.recent .imgBx img {
+  width: 100%;
+  height: 100%;
+}
+
+.phone3 .layer2 .song-play .songdetail h5 {
+  position: absolute;
+  top: 10%;
+  left: 25%;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.11), 
+  0 2px 2px rgba(0,0,0,0.11), 
+  0 4px 4px rgba(0,0,0,0.11), 
+  0 6px 8px rgba(0,0,0,0.11),
+  0 8px 16px rgba(0,0,0,0.11);
+}
+
+.phone3 .layer2 .song-play .songdetail p {
+  position: absolute;
+  top: 50%;
+  left: 32.5%;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.11), 
+  0 2px 2px rgba(0,0,0,0.11), 
+  0 4px 4px rgba(0,0,0,0.11), 
+  0 6px 8px rgba(0,0,0,0.11),
+  0 8px 16px rgba(0,0,0,0.11);
+}
+
+.feature h2 {
+  font-size: 70px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40vh 0 0 0;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.11), 
+  0 2px 2px rgba(0,0,0,0.11), 
+  0 4px 4px rgba(0,0,0,0.11), 
+  0 6px 8px rgba(0,0,0,0.11),
+  0 8px 16px rgba(0,0,0,0.11);
+  margin-top: 100px;
+}
+
+.feature .feat {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feat .feat1 {
+  width: 400px;
+  height: 400px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.feat1 img {
+  width: 100px;
+  height: 100px;
+  filter: invert(1);
+}
+
+.feat1 .title h4{
+  margin-top: 40px;
+  color: #fff;
+  font-size: 30px;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.11), 
+  0 2px 2px rgba(0,0,0,0.11), 
+  0 4px 4px rgba(0,0,0,0.11), 
+  0 6px 8px rgba(0,0,0,0.11),
+  0 8px 16px rgba(0,0,0,0.11);
+}
+
+.feat .info p {
+  margin-top: 25px;
+  color: #fff;
+  font-size: 20px;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.11), 
+  0 2px 2px rgba(0,0,0,0.11), 
+  0 4px 4px rgba(0,0,0,0.11), 
+  0 6px 8px rgba(0,0,0,0.11),
+  0 8px 16px rgba(0,0,0,0.11);
+}
+
+.download h2 {
+  font-size: 70px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20vh 0 0 0;
+  margin-top: 100px;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.11), 
+  0 2px 2px rgba(0,0,0,0.11), 
+  0 4px 4px rgba(0,0,0,0.11), 
+  0 6px 8px rgba(0,0,0,0.11),
+  0 8px 16px rgba(0,0,0,0.11);
+}
+
+.download-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 10vh 0;
+}
+
+.download-btn .app-btn {
+  width: 24%;
+  max-width: 500px;
+  color: #fff;
+  margin: 100px 20px;
+  padding: 10px 10px;
+  text-align: left;
+  border-radius: 5px;
+  text-decoration: none;
+  font-family: 'Lucida Grande',sans-serif;
+  font-size: 25px;
+  text-transform: uppercase;
+  background: #101010;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.11), 
+  0 2px 2px rgba(0,0,0,0.11), 
+  0 4px 4px rgba(0,0,0,0.11), 
+  0 6px 8px rgba(0,0,0,0.11),
+  0 8px 16px rgba(0,0,0,0.11);
+  box-shadow: 0 1px 1px rgba(0,0,0,0.11), 
+  0 2px 2px rgba(0,0,0,0.11), 
+  0 4px 4px rgba(0,0,0,0.11), 
+  0 6px 8px rgba(0,0,0,0.11),
+  0 8px 16px rgba(0,0,0,0.11);
+}
+
+.app-btn:hover {
+  background: #fff;
+  color: #000;
+  transition: background 0.25s linear;
+}
+
+.app-btn i {
+  width: 30%;
+  text-align: center;
+  font-size: 70px;
+}
+
+.big-txt {
+  font-size: 40px;
+  text-transform: capitalize;
+}
+
+.contact {
+  background: #000;
+  height: 50vh;
+}
+
+.contact .logo {
+  padding: 50px 100px;
+}
+
+.community h4,
+.useful-links h4 {
+  color: #5c5d64;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.community ul,
+.useful-links ul {
+  display: block;
+  margin-top: 25px;
+  margin-left: -100px;
+}
+
+.community ul li,
+.useful-links ul li {
+  list-style: none;
+  padding-top: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.useful-links ul li:hover {
+  color: #d60f0f;
+}
+
+.social-links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  margin: 0 15%;
+}
+
+.social-links .link {
+  margin: 0 10px;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  background: #222326;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.11), 
+  0 2px 2px rgba(0,0,0,0.11), 
+  0 4px 4px rgba(0,0,0,0.11), 
+  0 6px 8px rgba(0,0,0,0.11),
+  0 8px 16px rgba(0,0,0,0.11);
+}
+
+.social-links .link i {
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.11), 
+  0 2px 2px rgba(0,0,0,0.11), 
+  0 4px 4px rgba(0,0,0,0.11), 
+  0 6px 8px rgba(0,0,0,0.11),
+  0 8px 16px rgba(0,0,0,0.11);
+}
+
+.social-links i:hover {
+  color: #d60f0f;
+  transition: color .3s linear;
+}
+
+.contact p {
+  color: #fff;
+  width: 100%;
+  background: #222326;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  font-size: 20px;
+}
+
+
+
